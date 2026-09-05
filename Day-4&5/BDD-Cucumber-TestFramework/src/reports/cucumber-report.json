@@ -1,0 +1,235 @@
+[
+  {
+    "description": "  As a user\n  I want to enter different student details\n  So that I can verify the registration form for multiple users",
+    "elements": [
+      {
+        "description": "",
+        "id": "student-registration;verify-the-registration-form-for-multiple-users",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Verify the registration form for multiple users",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1219486800
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1571857599
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the user opens the student registration page",
+            "match": {
+              "location": "src\\features\\stepDefinitions\\student_registrationSteps.ts:7"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 372518600
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user fills the student registration form with \"John Doe\", \"john.doe@example.com\", \"Male\", \"9876543210\", \"Maths\", \"Sports\", \"123 Main Street, Agra\", \"Uttar Pradesh\" and \"Agra\"",
+            "match": {
+              "location": "src\\features\\stepDefinitions\\student_registrationSteps.ts:16"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 10966800
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the login button should be enabled",
+            "match": {
+              "location": "src\\features\\stepDefinitions\\student_registrationSteps.ts:34"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 292627599
+            },
+            "keyword": "After",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1591199
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "student-registration;verify-the-registration-form-for-multiple-users",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Verify the registration form for multiple users",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1338579999
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 787595499
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the user opens the student registration page",
+            "match": {
+              "location": "src\\features\\stepDefinitions\\student_registrationSteps.ts:7"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 403748299
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user fills the student registration form with \"Priya Sharma\", \"priya.sharma@example.com\", \"Female\", \"9876543211\", \"Computer Science\", \"Reading\", \"45 Park Road, Lucknow\", \"Uttar Pradesh\" and \"Lucknow\"",
+            "match": {
+              "location": "src\\features\\stepDefinitions\\student_registrationSteps.ts:16"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 6454099
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the login button should be enabled",
+            "match": {
+              "location": "src\\features\\stepDefinitions\\student_registrationSteps.ts:34"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 284332700
+            },
+            "keyword": "After",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1418400
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "student-registration;verify-the-registration-form-for-multiple-users",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Verify the registration form for multiple users",
+        "steps": [
+          {
+            "result": {
+              "status": "passed",
+              "duration": 1268025400
+            },
+            "keyword": "Before",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 794440099
+            },
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the user opens the student registration page",
+            "match": {
+              "location": "src\\features\\stepDefinitions\\student_registrationSteps.ts:7"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 347946200
+            },
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user fills the student registration form with \"Alex Morgan\", \"alex.morgan@example.com\", \"Other\", \"9876543212\", \"English\", \"Music\", \"78 Lake View Road, Ahmedabad\", \"Rajasthan\" and \"Agra\"",
+            "match": {
+              "location": "src\\features\\stepDefinitions\\student_registrationSteps.ts:16"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 6008799
+            },
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the login button should be enabled",
+            "match": {
+              "location": "src\\features\\stepDefinitions\\student_registrationSteps.ts:34"
+            }
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 269222400
+            },
+            "keyword": "After",
+            "hidden": true
+          },
+          {
+            "result": {
+              "status": "passed",
+              "duration": 737699
+            },
+            "keyword": "After",
+            "hidden": true
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "student-registration",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Student registration",
+    "tags": [],
+    "uri": "src\\features\\student_registration.feature"
+  }
+]

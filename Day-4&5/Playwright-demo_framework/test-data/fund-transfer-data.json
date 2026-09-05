@@ -1,0 +1,12 @@
+{
+  "Beneficiary":{
+    "fullName": "sumit",
+    "accNo": "772777272798299",
+    "bankName": "Wells Fargo"
+  },
+  "transferFunds": {
+    "beni":"sumit (Wells Fargo)",
+    "transferType": "External Wire Transfer",
+    "transferAmount": "2000"
+  }
+}
