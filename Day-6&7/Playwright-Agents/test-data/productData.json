@@ -1,0 +1,21 @@
+{
+  "singleProduct": {
+    "testCaseId": "CART-TC-001",
+    "scenarioId": "CART-002",
+    "description": "single product add and verify",
+    "productNames": ["Sauce Labs Backpack"],
+    "priority": "Critical",
+    "tags": ["@smoke", "@cart", "@critical"],
+    "enabled": true
+  },
+  "multipleProducts": {
+    "testCaseId": "CART-TC-002",
+    "scenarioId": "CART-003",
+    "description": "multiple products add and verify",
+    "productNames": ["Sauce Labs Backpack", "Sauce Labs Bike Light", "Sauce Labs Onesie"],
+    "priority": "High",
+    "tags": ["@regression", "@cart", "@high"],
+    "enabled": true
+  }
+}
+

@@ -1,0 +1,23 @@
+[
+  {
+    "testCaseId": "SORT-TC-001",
+    "scenarioId": "SORT-001",
+    "description": "sort by name ascending",
+    "sortOption": "Name (A to Z)",
+    "comparator": "alpha-asc",
+    "priority": "High",
+    "tags": ["@regression", "@inventory", "@high"],
+    "enabled": true
+  },
+  {
+    "testCaseId": "SORT-TC-002",
+    "scenarioId": "SORT-004",
+    "description": "sort by price descending",
+    "sortOption": "Price (high to low)",
+    "comparator": "price-desc",
+    "priority": "High",
+    "tags": ["@regression", "@inventory", "@high"],
+    "enabled": true
+  }
+]
+

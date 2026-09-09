@@ -1,0 +1,40 @@
+[
+  {
+    "testCaseId": "CHKINFO-TC-001",
+    "scenarioId": "CHK-INFO-001",
+    "description": "valid checkout information",
+    "firstName": "John",
+    "lastName": "Doe",
+    "postalCode": "12345",
+    "expectedUrlPath": "/checkout-step-two.html",
+    "priority": "Critical",
+    "tags": ["@e2e", "@checkout", "@critical"],
+    "enabled": true
+  },
+  {
+    "testCaseId": "CHKINFO-TC-002",
+    "scenarioId": "CHK-INFO-002",
+    "description": "empty checkout information",
+    "firstName": "",
+    "lastName": "",
+    "postalCode": "",
+    "expectedUrlPath": "/checkout-step-one.html",
+    "expectedErrorKey": "firstNameRequired",
+    "priority": "High",
+    "tags": ["@regression", "@checkout", "@high"],
+    "enabled": true
+  },
+  {
+    "testCaseId": "CHKINFO-TC-003",
+    "scenarioId": "CHK-INFO-006",
+    "description": "spaces only checkout information",
+    "firstName": "   ",
+    "lastName": "   ",
+    "postalCode": "   ",
+    "expectedUrlPath": "/checkout-step-two.html",
+    "priority": "Medium",
+    "tags": ["@regression", "@checkout", "@medium"],
+    "enabled": true
+  }
+]
+

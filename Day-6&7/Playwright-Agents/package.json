@@ -1,0 +1,34 @@
+{
+  "name": "playwright-agents",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:auth": "playwright test tests/authentication",
+    "test:auth:excel": "playwright test tests/authentication/excel-login.spec.ts",
+    "test:inventory": "playwright test tests/inventory",
+    "test:cart": "playwright test tests/cart",
+    "test:checkout": "playwright test tests/checkout",
+    "test:navigation": "playwright test tests/navigation",
+    "test:e2e": "playwright test tests/e2e",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report:html": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.4.1",
+    "allure-playwright": "^3.12.0",
+    "xlsx": "^0.18.5"
+  }
+}

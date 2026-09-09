@@ -1,0 +1,74 @@
+[
+  {
+    "testCaseId": "AUTH-TC-001",
+    "scenarioId": "AUTH-001",
+    "description": "valid credentials login",
+    "username": "standard_user",
+    "password": "",
+    "expectedUrlPath": "/inventory.html",
+    "priority": "Critical",
+    "tags": ["@smoke", "@regression", "@authentication", "@critical"],
+    "enabled": true
+  },
+  {
+    "testCaseId": "AUTH-TC-002",
+    "scenarioId": "AUTH-002",
+    "description": "invalid username with valid password",
+    "username": "invalid_user",
+    "password": "",
+    "expectedUrlPath": "/",
+    "expectedErrorKey": "invalidCredentials",
+    "priority": "High",
+    "tags": ["@regression", "@authentication", "@high"],
+    "enabled": true
+  },
+  {
+    "testCaseId": "AUTH-TC-003",
+    "scenarioId": "AUTH-003",
+    "description": "valid username with invalid password",
+    "username": "standard_user",
+    "password": "bad_password",
+    "expectedUrlPath": "/",
+    "expectedErrorKey": "invalidCredentials",
+    "priority": "High",
+    "tags": ["@regression", "@authentication", "@high"],
+    "enabled": true
+  },
+  {
+    "testCaseId": "AUTH-TC-004",
+    "scenarioId": "AUTH-004",
+    "description": "empty username and password",
+    "username": "",
+    "password": "",
+    "expectedUrlPath": "/",
+    "expectedErrorKey": "usernameRequired",
+    "priority": "High",
+    "tags": ["@regression", "@authentication", "@high"],
+    "enabled": true
+  },
+  {
+    "testCaseId": "AUTH-TC-005",
+    "scenarioId": "AUTH-007",
+    "description": "locked out user",
+    "username": "locked_out_user",
+    "password": "",
+    "expectedUrlPath": "/",
+    "expectedErrorKey": "lockedOutUser",
+    "priority": "Critical",
+    "tags": ["@smoke", "@regression", "@authentication", "@critical"],
+    "enabled": true
+  },
+  {
+    "testCaseId": "AUTH-TC-007",
+    "scenarioId": "AUTH-010",
+    "description": "leading and trailing spaces in credentials",
+    "username": " standard_user ",
+    "password": " secret_sauce ",
+    "expectedUrlPath": "/",
+    "expectedErrorKey": "invalidCredentials",
+    "priority": "Medium",
+    "tags": ["@regression", "@authentication", "@medium"],
+    "enabled": true
+  }
+]
+
