@@ -1,0 +1,165 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\nsinghsi\\OneDrive - Capgemini\\Desktop\\Custome-AgentsPlaywright\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/flights/bd-max-passengers.spec.ts",
+      "--debug"
+    ],
+    "configFile": "C:\\Users\\nsinghsi\\OneDrive - Capgemini\\Desktop\\Custome-AgentsPlaywright\\playwright.config.ts",
+    "rootDir": "C:/Users/nsinghsi/OneDrive - Capgemini/Desktop/Custome-AgentsPlaywright/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 1,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/nsinghsi/OneDrive - Capgemini/Desktop/Custome-AgentsPlaywright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/nsinghsi/OneDrive - Capgemini/Desktop/Custome-AgentsPlaywright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 0
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "flights\\bd-max-passengers.spec.ts",
+      "file": "flights/bd-max-passengers.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "BD-FLT-001 @boundary - Max passengers selection and validation",
+          "ok": true,
+          "tags": [
+            "boundary"
+          ],
+          "tests": [
+            {
+              "timeout": 0,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "interrupted",
+                  "duration": 185844,
+                  "error": {
+                    "message": "Error: locator.waitFor: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a[href*=\"flights\"]').or(locator('[data-testid=\"tab-flights\"]')).or(getByText('Flights').first()).first() to be visible\u001b[22m\n\u001b[2m    167 × locator resolved to hidden <a href=\"https://phptravels.net/flights\" class=\"flex items-center gap-2 px-2 py-1.5 text-sm text-gray-900 hover:bg-gray-100 rounded transition-colors\">…</a>\u001b[22m\n",
+                    "stack": "Error: locator.waitFor: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a[href*=\"flights\"]').or(locator('[data-testid=\"tab-flights\"]')).or(getByText('Flights').first()).first() to be visible\u001b[22m\n\u001b[2m    167 × locator resolved to hidden <a href=\"https://phptravels.net/flights\" class=\"flex items-center gap-2 px-2 py-1.5 text-sm text-gray-900 hover:bg-gray-100 rounded transition-colors\">…</a>\u001b[22m\n\n    at HomePage.openFlightsTab (C:\\Users\\nsinghsi\\OneDrive - Capgemini\\Desktop\\Custome-AgentsPlaywright\\pages\\HomePage.ts:18:32)\n    at C:\\Users\\nsinghsi\\OneDrive - Capgemini\\Desktop\\Custome-AgentsPlaywright\\tests\\flights\\bd-max-passengers.spec.ts:17:3",
+                    "location": {
+                      "file": "C:\\Users\\nsinghsi\\OneDrive - Capgemini\\Desktop\\Custome-AgentsPlaywright\\pages\\HomePage.ts",
+                      "column": 32,
+                      "line": 18
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\HomePage.ts:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m flightsTab\u001b[33m.\u001b[39mcount() \u001b[33m>\u001b[39m \u001b[35m0\u001b[39m) {\n \u001b[90m 17 |\u001b[39m       \u001b[90m// Wait for element to be visible and clickable\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m       \u001b[36mawait\u001b[39m flightsTab\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m       \u001b[36mawait\u001b[39m flightsTab\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m   }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\nsinghsi\\OneDrive - Capgemini\\Desktop\\Custome-AgentsPlaywright\\pages\\HomePage.ts",
+                        "column": 32,
+                        "line": 18
+                      },
+                      "message": "Error: locator.waitFor: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('a[href*=\"flights\"]').or(locator('[data-testid=\"tab-flights\"]')).or(getByText('Flights').first()).first() to be visible\u001b[22m\n\u001b[2m    167 × locator resolved to hidden <a href=\"https://phptravels.net/flights\" class=\"flex items-center gap-2 px-2 py-1.5 text-sm text-gray-900 hover:bg-gray-100 rounded transition-colors\">…</a>\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\HomePage.ts:18\n\n\u001b[0m \u001b[90m 16 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m flightsTab\u001b[33m.\u001b[39mcount() \u001b[33m>\u001b[39m \u001b[35m0\u001b[39m) {\n \u001b[90m 17 |\u001b[39m       \u001b[90m// Wait for element to be visible and clickable\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m       \u001b[36mawait\u001b[39m flightsTab\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m       \u001b[36mawait\u001b[39m flightsTab\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     }\n \u001b[90m 21 |\u001b[39m   }\u001b[0m\n\u001b[2m    at HomePage.openFlightsTab (C:\\Users\\nsinghsi\\OneDrive - Capgemini\\Desktop\\Custome-AgentsPlaywright\\pages\\HomePage.ts:18:32)\u001b[22m\n\u001b[2m    at C:\\Users\\nsinghsi\\OneDrive - Capgemini\\Desktop\\Custome-AgentsPlaywright\\tests\\flights\\bd-max-passengers.spec.ts:17:3\u001b[22m"
+                    },
+                    {
+                      "message": "Error: apiRequestContext._wrapApiCall: Target page, context or browser has been closed"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-09T04:35:50.702Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\nsinghsi\\OneDrive - Capgemini\\Desktop\\Custome-AgentsPlaywright\\test-results\\flights-bd-max-passengers--c867c-rs-selection-and-validation-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\nsinghsi\\OneDrive - Capgemini\\Desktop\\Custome-AgentsPlaywright\\test-results\\flights-bd-max-passengers--c867c-rs-selection-and-validation-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\nsinghsi\\OneDrive - Capgemini\\Desktop\\Custome-AgentsPlaywright\\pages\\HomePage.ts",
+                    "column": 32,
+                    "line": 18
+                  }
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "9200a09d811422511a44-8b417c9d70083bc48c8b",
+          "file": "flights/bd-max-passengers.spec.ts",
+          "line": 12,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-09T04:35:50.090Z",
+    "duration": 188192.052,
+    "expected": 0,
+    "skipped": 1,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
